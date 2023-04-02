@@ -1,1 +1,16 @@
-*{padding:0;margin:0;background-color:#fff}.nav-link{background-color:#fff}.d-item{height:auto}.d-img{margin-left:250px;margin-top:50px;border-radius:10px}/*# sourceMappingURL=styles.css.map */
+* {
+  padding:0;
+  argin:0;
+  background-color:#fff
+}
+
+.nav-link {
+  background-color:#fff
+}
+.d-item {
+  height:auto
+}
+.d-img {
+  margin-left:250px;
+  margin-top:50px;
+  border-radius:10px}
