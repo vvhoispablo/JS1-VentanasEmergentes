@@ -9,8 +9,8 @@ function login(){
     let busqueda = prompt("¿Qué le interesa? (combo/otro)").toUpperCase()
     if (busqueda == "combo"){
         alert("El precio del combo es de 12.245 pesos")
-        preciofinal = PrecioCombo
-        while (preciofinal > 12.245){
+        preciototal = PrecioCombo
+        while (preciototal > 12.245){
             preciototal = preciototal * 0.9
             interes = 1
         }
@@ -20,7 +20,7 @@ function login(){
         if(continuar == "sí"){
             cuotas = prompt("¿En cuántas cuotas desea realizar su compra? (1/2/3/4/5/6)")
             preciototal = preciototal / cuotas * interes
-            alert("El precio final por cuota será de " + preciototal.toFixed())
+            alert("El precio total por cuota será de " + preciototal.toFixed())
             confirmacion = prompt("¿Desea proseguir con la operación? (sí/no)")
             if (confirmacion == "sí"){
                 alert("¡Muchas gracias por su compra!")
@@ -36,7 +36,7 @@ function login(){
         let cantidad = prompt("¿Cuántas roms quieres agregar al carrito?")
         preciototal = PrecioOtro * cantidad
         while (preciototal > 6590){
-            preciofinal = preciototal * 0.9
+            preciototal = preciototal * 0.9
             interes = 1
         }
         alert("El precio total de su compra es de " + preciototal.toFixed())
